@@ -1,0 +1,313 @@
+header {
+    background-image: url(../images/products/header.jpg);
+}
+
+#preference, #logout {
+    background-color: rgb(247, 191, 88);
+    border: 2px solid rgb(247, 191, 88);
+    border-radius: 10px;
+    font-size: 20px;
+    width: 35%;
+    z-index: 1;
+}
+
+#preference:hover, #logout:hover {
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+/* Section */
+
+section {
+    background-color: wheat;
+    display: flex;
+    padding: 2% 0%;
+    height: 1000px;
+}
+
+.lateral_block {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px groove darkgrey;
+    background-color: rgb(247, 191, 88);
+}
+
+.lateral_image {
+    width: 90%;
+    height: 18%;
+    border: 3px groove darkgrey;
+    background-color: white;
+}
+
+#main_block {
+    width: 70%;
+}
+
+#title_blocks {
+    margin: 0% 3%;
+    font-size: calc(30px + 3vw);
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Arbutus', cursive;
+}
+
+#input_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+}
+
+#form_modal_preference {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form_input {
+    margin: 0px;
+}
+
+#form_input span, #form_modal_preference span {
+    font-size: 18px;
+}
+
+#input_button:hover, #input_images:hover {
+    cursor: pointer;
+}
+
+#all_blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 80%;
+}
+
+#noElement {
+    font-size: calc(20px + 2vw);
+    color: red;
+    margin: 5% 5%;
+    text-align: center;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px groove darkgrey;
+    height: 45%;
+    width: 15%;
+    margin: 1% 1%;
+    background-color: rgb(247, 191, 88);
+    word-wrap: break-word;
+}
+
+.name {
+    margin: 0px;
+    margin-top: 5%;
+    width: 90%;
+    font-size: calc(13px + 1vw);
+    font-family: 'Cherry Swash', cursive;
+    text-align: center;
+}
+
+.image {
+    border-top: 2px groove darkgrey;
+    width: 100%;
+    height: 55%;
+    background-color: white;
+}
+
+.image:hover {
+    cursor: pointer;
+}
+
+#modal_block {
+    width: 55%;
+    height: 60%;
+    border: 2px groove darkgrey;
+}
+
+#modal_image {
+    height: 100%;
+    width: 55%;
+    background-color: white;
+}
+
+#modal_content {
+    width: 45%;
+    background-color: rgb(247, 191, 88);
+    border-left: 2px groove darkgrey;
+    padding: 2%;
+    overflow-y: scroll;
+}
+
+#modal_name {
+    font-family: 'Cherry Swash', cursive;
+    margin-top: 0px;
+}
+
+#modal_text {
+    font-family: 'Space Mono', monospace;
+}
+
+#modal_preference {
+    margin: 3%;
+    font-size: 15px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+#modal_preference:hover {
+    cursor: pointer;
+    border-color: red;
+}
+
+#modal_content span {
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+    color: green;
+}
+
+#modal_block_preference {
+    width: 75%;
+    height: 80%;
+    background-color: rgb(247, 191, 88);
+    border: 2px groove darkgrey;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#modal_title {
+    font-size: 40px;
+}
+
+#products {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 2px solid grey;
+    overflow-y: scroll;
+}
+
+.product {
+    width: 80%;
+    height: 10%;
+    border: 2px groove darkgrey;
+    margin: 1% 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(250, 220, 150);
+}
+
+.product_info {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_info h1 {
+    margin: 0px;
+    margin-left: 2%;
+    font-size: 20px;
+}
+
+.product_button {
+    margin: 3%;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.product_button:hover {
+    cursor: pointer;
+    color: red;
+    border-color: red;
+}
+
+/* Media Query */
+
+@media (max-width: 1000px) {
+    section {
+        height: 1050px;
+    }
+    .block {
+        height: 35%;
+        width: 20%;
+    }
+    #modal_block {
+        width: 70%;
+    }
+}
+@media (max-width: 850px) {
+    #login {
+        width: 300px;
+        height: 150px;
+    }
+    #title_login {
+        font-size: 30px;
+        width: 80%;
+    }
+    section {
+        height: 1100px;
+    }
+    .block {
+        height: 30%;
+        width: 20%;
+    }
+    .name {
+        font-size: 20px;
+    }
+}
+@media (max-width: 700px) {
+    /* Header */
+    #login {
+        width: 250px;
+        height: 150px;
+    }
+    #title_login {
+        font-size: 20px;
+        width: 75%;
+    }
+    #login div {
+        width: 70%;
+    }
+    #preference, #logout {
+        font-size: 15px;
+        width: 40%;
+    }
+    /* Section */
+    section {
+        height: 900px;
+    }
+    #title_blocks {
+        margin-top: 2%;
+        font-size: 45px;
+    }
+    #input_block {
+        flex-direction: column;
+    }
+    #input_images {
+        margin-bottom: 2%;
+    }
+    #all_blocks {
+        height: 70%;
+    }
+    .name {
+        font-size: 18px;
+    }
+    #modal_block {
+        width: 80%;
+    }
+}

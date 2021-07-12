@@ -1,0 +1,227 @@
+header {
+    background-image: url(../images/suppliers/header.jpg);
+}
+
+#login div span {
+    font-size: 20px;
+    color: white;
+}
+
+#input_login, #input_register, #profile, #logout, #logout_res {
+    background-color: rgb(247, 191, 88);
+    border: 2px solid rgb(247, 191, 88);
+    border-radius: 10px;
+    font-size: 20px;
+    width: 35%;
+    z-index: 1;
+}
+
+#input_login:hover, #input_register:hover, #profile:hover, #logout:hover, #logout_res:hover {
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+/* Section */
+
+section {
+    background-color: wheat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+#title_blocks {
+    font-size: calc(30px + 3vw);
+    margin: 0px 3% 0px 3%;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Arbutus', cursive;
+}
+
+#input_block {
+    text-align: right;
+    width: 80%;
+    margin: 1% 0%;
+    font-size: 20px;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px groove darkgrey;
+    width: 80%;
+    margin: 0.5% 0%;
+    background-color: rgb(247, 191, 88);
+}
+
+.name {
+    margin: 0px;
+    margin-left: 2%;
+    height: 100%;
+    font-size: calc(20px + 1vw);
+    font-family: 'Cherry Swash', cursive;
+}
+
+.address {
+    height: 100%;
+    margin-right: 2%;
+    font-size: calc(15px + 1vw);
+    font-family: 'Cherry Swash', cursive;
+    text-align: start;
+}
+
+#modal_block {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px groove darkgrey;
+    background-color: rgb(247, 191, 88);
+}
+
+#modal_title {
+    font-size: 40px;
+}
+
+#form_login, #form_register, #form_profile {
+    margin: 0px;
+    font-size: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+#form_profile {
+    align-items: center;
+}
+
+#form_profile label {
+    margin: 2% 0%;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    margin: 1% 0%;
+}
+
+#modal em {
+    font-size: 15px;
+}
+
+label {
+    font-size: 25px;
+}
+
+#modal_button, #delete_profile {
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 3% 0%;
+}
+
+#delete_profile {
+    color: red;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons span, #modal_error {
+    margin: 2% 0%;
+    color:red;
+}
+
+#modal_button:hover, #delete_profile:hover {
+    cursor: pointer;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    color: red;
+}
+
+/* Media Query */
+
+@media (max-width: 1000px) {
+    .name {
+        font-size: 25px;
+    }
+    .address {
+        font-size: 20px;
+    }
+}
+@media (max-width: 850px) {
+    label {
+        font-size: 20px;
+    }
+    .error {
+        font-size: 15px;
+    }
+    #login {
+        width: 350px;
+        height: 200px;
+    }
+    #title_login {
+        font-size: 30px;
+    }
+    .address {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    /* Header */
+    #login {
+        width: 250px;
+        height: 150px;
+    }
+    #title_login {
+        font-size: 20px;
+        width: 80%;
+    }
+    #input_login, #input_register, #profile, #logout, #logout_res {
+        font-size: 15px;
+        width: 40%;
+    }
+    #login div span {
+        margin: 0% 3%;
+    }
+    label {
+        display: flex;
+    }
+    /* Section */
+    #title_blocks {
+        margin-top: 2%;
+        font-size: 45px;
+    }
+    #input_block {
+        text-align: center;
+        margin: 2% 0%;
+    }
+}
+
+@media (max-width: 650px) {
+    #login {
+        width: 250px;
+        height: 150px;
+    }
+    #title_login {
+        font-size: 25px;
+    }
+    #login div span {
+        font-size: 15px;
+    }
+    #input_login, #input_register, #profile, #logout, #logout_res {
+        font-size: 13px;
+    }
+}
